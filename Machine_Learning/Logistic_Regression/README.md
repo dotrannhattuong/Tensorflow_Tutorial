@@ -80,6 +80,32 @@ model.compile(optimizer=opt,
 history = model.fit(X, y, batch_size, epochs)
 ```
 
+**B5**: Evaluation
+```
+preds = model(X)
+preds = preds.numpy()
+preds = preds.round()
+
+acc = np.mean(y==preds[:,0])
+print(acc)
+```
+
+**B6**: Visualize
+```
+import matplotlib.pyplot as plt
+
+plt.plot(history.history['loss'])
+plt.xlabel('iteration')
+plt.ylabel('Loss')
+plt.show()
+```
+
+**Option**
+```
+# parameters after training
+print('weight-bias: \n', model.layers[0].get_weights())
+```
+
 ## <div align="center">Note</div>
 - Nên sử dụng model.predict(X_testing) để predict vì nếu xài model(X_testing) sẽ phải convert qua numpy -> chuyển từ RAM sang VRAM -> chậm
 - Weights save với đuôi .ckpt

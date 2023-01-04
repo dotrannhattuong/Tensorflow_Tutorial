@@ -152,6 +152,13 @@ plt.ylabel('Loss')
 plt.show()
 ```
 
+**B8**: # Load model
+```
+model = keras.models.load_model('/content/models/model_5')
+print(model.layers[0].get_weights())
+model.summary()
+```
+
 ## <div align="center">Note</div>
 - Nếu có cả validation_data và validation_split thì nó sẽ ưu tiên validation_data
 - Nên sử dụng model.predict(X_testing) để predict vì nếu xài model(X_testing) sẽ phải convert qua numpy -> chuyển từ RAM sang VRAM -> chậm
