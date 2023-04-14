@@ -160,6 +160,7 @@ model.summary()
 ```
 
 ## <div align="center">Note</div>
+- Có Sparse thì không cần ```one hot encoding```
 - Nếu có cả validation_data và validation_split thì nó sẽ ưu tiên validation_data
 - Nên sử dụng model.predict(X_testing) để predict vì nếu xài model(X_testing) sẽ phải convert qua numpy -> chuyển từ RAM sang VRAM -> chậm
 - Weights save với đuôi .ckpt
