@@ -15,6 +15,8 @@
 
 2/ [Training-Callbacks-Metrics](https://github.com/dotrannhattuong/Tensorflow_Tutorial/blob/main/Machine_Learning/Softmax/3.Softmax_Keras_Training.ipynb)
 
+3/ [Training Softmax with Fashion MNIST](https://github.com/dotrannhattuong/Tensorflow_Tutorial/blob/main/Machine_Learning/Softmax/4.Softmax_MNIST.ipynb)
+
 ---
 ## <div align="center">Pipeline</div>
 
