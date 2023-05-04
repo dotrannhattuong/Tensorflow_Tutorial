@@ -3,6 +3,15 @@
 # How to install Tensorflow GPU
 Check version: https://www.tensorflow.org/install/source#gpu
 
+Check CUDA:
+```
+import tensorflow as tf
+
+if tf.test.is_gpu_available(cuda_only=False, min_cuda_compute_capability=None):
+    print("CUDA GPU is available for TensorFlow.")
+else:
+    print("CUDA GPU is NOT available for TensorFlow.")
+```
 # Note
 <details>
 <summary>Visualize model</summary>
