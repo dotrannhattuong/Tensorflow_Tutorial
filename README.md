@@ -3,6 +3,11 @@
 # How to install Tensorflow GPU
 Check version: https://www.tensorflow.org/install/source#gpu
 
+Install:
+```
+conda install -c anaconda tensorflow-gpu
+```
+
 Check CUDA:
 ```
 import tensorflow as tf
