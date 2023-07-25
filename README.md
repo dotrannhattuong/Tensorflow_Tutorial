@@ -10,9 +10,11 @@ conda install -c anaconda tensorflow-gpu
 
 Check CUDA:
 ```
+# python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
 import tensorflow as tf
 
-if tf.test.is_gpu_available(cuda_only=False, min_cuda_compute_capability=None):
+if tf.config.list_physical_devices('GPU'):
     print("CUDA GPU is available for TensorFlow.")
 else:
     print("CUDA GPU is NOT available for TensorFlow.")
